@@ -15,17 +15,14 @@ export default function Header() {
   return (
     <>
       <div className="h-screen container flex flex-wrap items-center justify-between mx-auto">
-        <div
-          className="z-10 absolute top-0 -left-4 w-72 h-56 bg-orange rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-
         <h1 className="z-10 -mt-24 text-8xl text-white font-extrabold">
-                    МАРКЕТИНГОВОЕ АГЕНСТВО <Image className="inline w-24 -mt-4" src={nextItem} alt="next" /><br/>ПОЛНОГО ЦИКЛА
+          МАРКЕТИНГОВОЕ АГЕНСТВО <Image className="inline w-24 -mt-4" src={nextItem} alt="next" /><br/>ПОЛНОГО ЦИКЛА
         </h1>
 
         <Image className="absolute orange-shadow right-10 w-3/12" src={marketingCube} alt="marketing cube" />
       </div>
 
-      <div className="container relative z-50 mx-auto">
+      <div className="container relative z-20 mx-auto">
         <motion.div style={{ rotate: rotateY }} className="w-fit relative absolute bottom-56">
           <Image src={scrollDown} className="inline w-52" alt="down scroller" />
         </motion.div>

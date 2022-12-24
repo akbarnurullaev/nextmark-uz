@@ -4,7 +4,7 @@ import Button from './Button';
 
 export default function Navbar() {
   return (
-    <nav className="fixed w-full z-20 py-5 bg-blurry-dark border-gray-200 px-2 sm:px-4">
+    <nav className="fixed w-full z-50 py-5 bg-blurry-dark border-gray-200 px-2 sm:px-4">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" className="flex items-center">
           <Image src={logo} alt="Logo" />

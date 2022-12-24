@@ -69,7 +69,7 @@ a {
 }
 
 .orange-shadow {
-  filter: drop-shadow(0px 0px 32px #E9562A);
+  filter: drop-shadow(0px 0px 48px #E9562A);
   animation-name: orange-shadow;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -77,13 +77,13 @@ a {
 
 @keyframes orange-shadow {
   0% {
-    filter: drop-shadow(0px 0px 32px #E9562A);
+    filter: drop-shadow(0px 0px 52px #E9562A);
   }
   50% {
-    filter: drop-shadow(0px 0px 64px #E9562A);
+    filter: drop-shadow(0px 0px 112px #E9562A);
   }
   100% {
-    filter: drop-shadow(0px 0px 32px #E9562A);
+    filter: drop-shadow(0px 0px 52px #E9562A);
   }
 }
 
