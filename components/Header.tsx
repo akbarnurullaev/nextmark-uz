@@ -16,10 +16,16 @@ export default function Header() {
     <>
       <div className="h-screen container flex flex-wrap items-center justify-between mx-auto">
         <h1 className="z-10 -mt-24 text-8xl text-white font-extrabold">
-          МАРКЕТИНГОВОЕ АГЕНСТВО <Image className="inline w-24 -mt-4" src={nextItem} alt="next" /><br/>ПОЛНОГО ЦИКЛА
+          МАРКЕТИНГОВОЕ АГЕНСТВО <Image className="inline w-24 -mt-4" src={nextItem} alt="next" /> ПОЛНОГО
+          <br/>ЦИКЛА
         </h1>
 
-        <Image className="absolute orange-shadow right-10 w-3/12" src={marketingCube} alt="marketing cube" />
+        <h1 className="absolute text-white-outlined z-40 -mt-24 text-8xl text-white font-extrabold">
+          МАРКЕТИНГОВОЕ АГЕНСТВО <Image className="inline w-24 -mt-4" src={nextItem} alt="next" /> ПОЛНОГО
+          <br/>ЦИКЛА
+        </h1>
+
+        <Image className="absolute z-20 right-10 w-3/12" src={marketingCube} alt="marketing cube" />
       </div>
 
       <div className="container relative z-20 mx-auto">

@@ -64,7 +64,7 @@ export default function ProjectsGrid() {
       </div>
 
       <a href="">
-        <h1 className="container mt-8 text-2xl text-white mx-auto text-right uppercase">Все проекты <Image className="inline" src={arrowRight} alt="arrow right"/></h1>
+        <h1 className="container hover:text-orange duration-200 mt-8 text-2xl text-white mx-auto text-right uppercase">Все проекты <Image className="inline" src={arrowRight} alt="arrow right"/></h1>
       </a>
     </>
   )
