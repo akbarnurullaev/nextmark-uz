@@ -14,9 +14,9 @@ export default function ProjectCard({ src, alt, title, description, containerCla
     <div className={`${containerClass} relative project-card cursor-pointer`}>
       <Image className={`${imgClass} project-card-image`} src={src} alt={alt}/>
 
-      <div>
+      <div className="info-block">
         <div className="px-8 pb-8">
-          <h1 className="text-2xl text-white w-full">{title}</h1>
+          <h1 className="text-2xl uppercase text-white w-full">{title}</h1>
           <p className="mt-2 text-cream w-full">{description}</p>
         </div>
       </div>

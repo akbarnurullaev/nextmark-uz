@@ -1,18 +1,16 @@
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
+import Navbar from '../components/base/Navbar';
+import Header from '../components/base/Header';
 import ProjectsGrid from '../components/ProjectsGrid';
 import NextmarkStatistics from '../components/NextmarkStatistics';
 import Services from '../components/Services';
 import DomainsScrollable from '../components/DomainsScrollable';
 import Clients from '../components/Clients';
 import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
+import BaseLayout from '../components/layouts/BaseLayout';
 
 export default function Home() {
   return (
-    <main>
-      <Navbar/>
-
+    <BaseLayout>
       <Header/>
 
       <ProjectsGrid/>
@@ -26,8 +24,6 @@ export default function Home() {
       <Clients/>
 
       <ContactForm/>
-
-      <Footer/>
-    </main>
+    </BaseLayout>
   )
 }

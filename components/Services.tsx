@@ -1,4 +1,4 @@
-import Head from './Head';
+import Head from './base/Head';
 import ServiceCard from './ServiceCard';
 
 export default function Services() {

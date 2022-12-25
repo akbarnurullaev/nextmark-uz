@@ -14,11 +14,12 @@ import sos from '../public/brands/sos.png'
 import styx from '../public/brands/styx.png'
 import team from '../public/brands/team.png'
 import uzbic from '../public/brands/uzbic.png'
+import GradientText from './base/GradientText';
 
 export default function Clients() {
   return (
     <div>
-      <h1 className="text-9xl text-dark text-outlined-gradient font-black uppercase text-center">наши клиенты</h1>
+      <GradientText text="наши клиенты"/>
 
       <div className="bg-darkGrey mt-14">
         <div className="flex flex-wrap container mx-auto py-14 px-12">

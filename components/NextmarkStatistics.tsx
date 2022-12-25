@@ -1,6 +1,6 @@
 import StatisticsTab from './StatisticsTab';
-import Button from './Button';
-import Head from './Head';
+import Head from './base/Head';
+import ContactUsButton from './base/ContactUsButton';
 
 export default function NextmarkStatistics() {
   return (
@@ -15,7 +15,7 @@ export default function NextmarkStatistics() {
       </div>
 
       <div className="w-full flex justify-center mt-24">
-        <Button title="СВЯЗАТЬСЯ С НАМИ" className=""/>
+        <ContactUsButton />
       </div>
     </div>
   )

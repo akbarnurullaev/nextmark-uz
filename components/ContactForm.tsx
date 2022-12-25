@@ -1,5 +1,6 @@
-import Head from './Head';
-import Button from './Button';
+import Head from './base/Head';
+import Button from './base/Button';
+import ContactUsButton from './base/ContactUsButton';
 
 export default function ContactForm() {
   return (
@@ -33,7 +34,7 @@ export default function ContactForm() {
         <input className="text-lightGrey placeholder-lightGrey border-lightGrey w-full border-b-2 pb-2 bg-dark border-0 outline-0" placeholder="Имя" type="text"/>
         <input className="mt-16 text-lightGrey placeholder-lightGrey border-lightGrey w-full border-b-2 pb-2 bg-dark border-0 outline-0" placeholder="Телефон" type="text"/>
         <input className="text-lightGrey placeholder-lightGrey border-lightGrey w-full border-b-2 pt-32 pb-2 bg-dark border-0 outline-0" placeholder="Напишите сообщение" type="text"/>
-        <Button className="mt-8" title="связаться с нами"/>
+        <ContactUsButton className="mt-8" />
       </div>
     </div>
   );

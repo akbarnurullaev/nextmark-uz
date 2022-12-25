@@ -19,6 +19,11 @@ module.exports = {
       serif: ['RF Dewi Expanded', 'serif'],
     },
     extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+        '256': '64rem',
+      },
       animation: {
         blob: "blob 7s infinite",
       },
