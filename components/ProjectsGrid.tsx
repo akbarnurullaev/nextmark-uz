@@ -1,8 +1,10 @@
 import Image, {StaticImageData} from 'next/image'
-import ProjectCard from './ProjectCard';
+import ProjectCard, {ProjectCardMobile} from './ProjectCard';
 import arrowRight from '../public/arrorRight.svg'
 import Link from 'next/link';
-import {projects} from './constants';
+import {projects, projectsList} from './constants';
+import {motion, useScroll, useSpring} from 'framer-motion';
+import scrollDown from '../public/scroll-down.svg';
 
 export type Project = {
   title: string
@@ -17,7 +19,16 @@ export type Projects =  'taxi' | 'oqz' | 'mandarin' | 'cityLife' | 'trinity' | '
 
 export default function ProjectsGrid() {
   return (
-    <>
+    <div className="mb:mt-0 -mt-20">
+      <ProjectsGridDesktop/>
+      <ProjectsGridMobile/>
+    </div>
+  )
+}
+
+function ProjectsGridDesktop() {
+  return (
+    <div className="max-[768px]:hidden">
       <div className="container flex mx-auto -mt-80">
         <div className="w-8/12 mr-6">
           <Link href="/projects/taxi">
@@ -56,10 +67,10 @@ export default function ProjectsGrid() {
 
         <div className="flex flex-col justify-between w-4/12">
           <div>
-            <h1 className="text-2xl font-semibold text-white w-full mb-2">
+            <h1 className="xl:text-2xl lg:text-xl font-semibold text-white w-full mb-2">
               ПРОЕКТЫ
             </h1>
-            <p className="text-white w-full">
+            <p className="xl:text-base lg:text-sm text-white w-full">
               Мы создаем айдентику, графику и <br/>
               занимаемся маркетингом. Nextmark это следующая точка вашего бизнеса и мы<br/>
               поможем подняться на следующий <br/>
@@ -82,6 +93,50 @@ export default function ProjectsGrid() {
       <Link href="/projects">
         <h1 className="container hover:text-orange duration-200 mt-8 text-2xl text-white mx-auto text-right uppercase">Все проекты <Image className="inline" src={arrowRight} alt="arrow right"/></h1>
       </Link>
-    </>
+    </div>
   )
 }
+
+function ProjectsGridMobile() {
+  const { scrollY } = useScroll();
+  const rotateY = useSpring(scrollY, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+  return (
+    <div className="hidden container mx-auto max-[768px]:inline">
+      <div className="px-4 container">
+        <h1 className="xl:text-2xl lg:text-xl text-lg font-bold text-white w-full mb-2">
+          ПРОЕКТЫ
+        </h1>
+        <p className="xl:text-base lg:text-sm text-sm text-white w-full">
+          Мы создаем айдентику, графику и
+          занимаемся маркетингом. Nextmark это следующая точка вашего бизнеса и мы
+          поможем подняться на следующий
+          уровень.
+        </p>
+      </div>
+
+      <div className="">
+        <motion.div style={{ rotate: rotateY }} className="w-fit z-30 relative absolute top-12">
+          <Image src={scrollDown} className="inline w-28" alt="down scroller" />
+        </motion.div>
+      </div>
+
+      <div className="px-4">
+        {projectsList.slice(0, 3).map((project) => (
+          <Link href={`/projects/${project.slug}`}>
+            <ProjectCardMobile src={project.img} alt={''} {...project}/>
+          </Link>
+        ))}
+      </div>
+
+      <Link href="/projects">
+        <h1 className="px-4 hover:text-orange duration-200 mt-8 text-white uppercase">Все проекты <Image className="inline" src={arrowRight} alt="arrow right"/></h1>
+      </Link>
+    </div>
+  )
+}
+

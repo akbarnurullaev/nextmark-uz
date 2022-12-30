@@ -3,12 +3,15 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite-react/**/*.js",
+    "./public/**/*.html",
   ],
   theme: {
     colors: {
       'dark': '#0A0A0A',
       'orange': '#E9562A',
       'white': '#FFFFFF',
+      'lightCream': '#DADADA',
       'cream': '#8B8B8B',
       'lightGrey': '#636363',
       'grey': '#1B1B1B',
@@ -19,6 +22,20 @@ module.exports = {
       serif: ['RF Dewi Expanded', 'serif'],
     },
     extend: {
+      screens: {
+        'sm-mobile': '400px',
+
+        'mobile': '520px',
+
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+
+        'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        'desktop': '1280px',
+        // => @media (min-width: 1280px) { ... }
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
@@ -45,5 +62,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }

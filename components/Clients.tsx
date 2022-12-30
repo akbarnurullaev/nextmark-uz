@@ -21,10 +21,10 @@ export default function Clients() {
     <div>
       <GradientText text="наши клиенты"/>
 
-      <div className="bg-darkGrey mt-14">
-        <div className="flex flex-wrap container mx-auto py-14 px-12">
+      <div className="lg:bg-darkGrey mt-14">
+        <div className="flex flex-wrap min-[768px]:container min-[768px]:mx-auto lg:py-14 xl:px-12 lg:px-0 px-4">
           {images.map((image) => (
-            <div className="w-1/5 p-14 opacity-50">
+            <div className="lg:w-1/5 w-2/6 xl:p-14 lg:p-8 p-4 opacity-50">
               <Image src={image} alt="wef"/>
             </div>
           ))}

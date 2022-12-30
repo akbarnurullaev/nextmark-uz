@@ -4,14 +4,14 @@ import ContactUsButton from './base/ContactUsButton';
 
 export default function NextmarkStatistics() {
   return (
-    <div className="container mx-auto mt-64">
+    <div className="min-[768px]:container min-[768px]:mx-auto min-[768px]:mt-64 max-[768px]:px-4 max-[768px]:mt-24">
       <Head title="Nextmark" subtitle="в цифрах"/>
 
 
-      <div className="flex justify-between mt-10">
-        <StatisticsTab number={3} title="3 года на рынке маркетинга"/>
-        <StatisticsTab number={40} title="более 40 реализованных проектов" className="mx-10"/>
-        <StatisticsTab number={15} title="более 15 специалистов в команде"/>
+      <div className="flex justify-between max-[768px]:flex-wrap mt-10">
+        <StatisticsTab isMobile number={3} title="3 года на рынке маркетинга" className=""/>
+        <StatisticsTab isMobile number={40} title="более 40 реализованных проектов" className="min-[768px]:mx-10"/>
+        <StatisticsTab isMobile number={15} title="более 15 специалистов в команде" className=""/>
       </div>
 
       <div className="w-full flex justify-center mt-24">
