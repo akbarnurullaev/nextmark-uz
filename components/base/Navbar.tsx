@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
         <Transition
           show={isOpen}
-          className="w-full md:w-auto md:hidden"
+          className="w-full md:w-auto md:hidden relative"
           enter="transition-opacity duration-150"
           enterFrom="opacity-0"
           enterTo="opacity-100"
@@ -69,6 +69,11 @@ export default function Navbar() {
           leaveTo="opacity-0"
         >
           <NavbarContent/>
+          <p className="text-white -mx-4 -mb-5 mt-3 text-center bg-orange py-3 uppercase duration-200 md:mt-0 mt-10">
+            <a href="tel:+998 90 009 09 59">
+              Контакты
+            </a>
+          </p>
         </Transition>
 
         <div className="md:block hidden">

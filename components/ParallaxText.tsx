@@ -49,7 +49,7 @@ export default function ParallaxText({ baseVelocity = 100, words, className }: P
     <div className={`parallax ${className}`}>
       <motion.div className="scroller" style={{ x }}>
         {words.map((word) => (
-          <span className="text-xl font-semibold py-2">{word}</span>
+          <span className="md:text-xl text-sm font-semibold py-2">{word}</span>
         ))}
       </motion.div>
     </div>

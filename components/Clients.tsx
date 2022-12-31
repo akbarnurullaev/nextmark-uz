@@ -24,7 +24,7 @@ export default function Clients() {
       <div className="lg:bg-darkGrey mt-14">
         <div className="flex flex-wrap min-[768px]:container min-[768px]:mx-auto lg:py-14 xl:px-12 lg:px-0 px-4">
           {images.map((image) => (
-            <div className="lg:w-1/5 w-2/6 xl:p-14 lg:p-8 p-4 opacity-50">
+            <div className="lg:w-1/5 w-2/6 xl:p-14 lg:p-8 p-4 opacity-50 flex items-center justify-center">
               <Image src={image} alt="wef"/>
             </div>
           ))}
@@ -34,4 +34,4 @@ export default function Clients() {
   );
 }
 
-const images = [abb, dolcitta, city, favorite, gosht, hamkor, imzo, kango, lekar, mandarin, oqz, sos, styx, team, uzbic]
+const images = [imzo, hamkor, favorite, uzbic, lekar, abb, sos, team, styx, oqz, gosht, city, mandarin, kango, dolcitta]

@@ -40,6 +40,8 @@ module.exports = {
         '128': '32rem',
         '144': '36rem',
         '256': '64rem',
+        '288': '76rem',
+        '384': '96rem',
       },
       animation: {
         blob: "blob 7s infinite",
