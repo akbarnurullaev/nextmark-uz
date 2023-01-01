@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1656a4b8-8f0a-43a6-a3f3-19775343f394" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ScrollCircle.tsx" afterDir="false" />
+    <list default="true" id="1656a4b8-8f0a-43a6-a3f3-19775343f394" name="Changes" comment="better mobile version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Clients.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Clients.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DomainsScrollable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DomainsScrollable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NextmarkStatistics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NextmarkStatistics.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ParallaxText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ParallaxText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProjectsGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectsGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RotateElement.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/base/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/base/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/base/ContactUsButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/base/ContactUsButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/base/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/base/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/base/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/base/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about-us/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-us/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +73,16 @@
       <updated>1671821932113</updated>
       <workItem from="1671821933055" duration="76074000" />
       <workItem from="1672135751856" duration="891000" />
-      <workItem from="1672250369153" duration="56658000" />
+      <workItem from="1672250369153" duration="61316000" />
     </task>
+    <task id="LOCAL-00001" summary="better mobile version">
+      <created>1672501240591</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672501240591</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +98,9 @@
         <option value="Space.CommitStatus" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="better mobile version" />
+    <option name="LAST_COMMIT_MESSAGE" value="better mobile version" />
   </component>
 </project>
