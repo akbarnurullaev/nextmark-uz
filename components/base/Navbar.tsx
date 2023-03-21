@@ -11,26 +11,31 @@ export default function Navbar() {
   const NavbarContent = () => (
     <div className="text-cream duration-100 items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-cta">
       <ul className="flex text-center flex-col p-4 mt-4 md:flex-row md:space-x-12 md:mt-0 md:text-sm md:font-medium md:border-0">
+        <li className="hover:text-orange duration-200 md:mt-0 mt-10">
+          <Link href="/">
+            О нас
+          </Link>
+        </li>
         <li className="hover:text-orange duration-200">
           <Link href="/projects">
               Проекты
           </Link>
         </li>
-        <li className="hover:text-orange duration-200 md:mt-0 mt-10">
-          <Link href="components#">
-              Услуги
-          </Link>
-        </li>
-        <li className="hover:text-orange duration-200 md:mt-0 mt-10">
-          <Link href="/about-us">
-              О нас
-          </Link>
-        </li>
-        <li className="hover:text-orange duration-200 md:mt-0 mt-10">
-          <Link href="components#">
-              Блог
-          </Link>
-        </li>
+        {/*<li className="hover:text-orange duration-200 md:mt-0 mt-10">*/}
+        {/*  <Link href="components#">*/}
+        {/*      Услуги*/}
+        {/*  </Link>*/}
+        {/*</li>*/}
+        {/*<li className="hover:text-orange duration-200 md:mt-0 mt-10">*/}
+        {/*  <Link href="/about-us">*/}
+        {/*      О нас*/}
+        {/*  </Link>*/}
+        {/*</li>*/}
+        {/*<li className="hover:text-orange duration-200 md:mt-0 mt-10">*/}
+        {/*  <Link href="components#">*/}
+        {/*      Блог*/}
+        {/*  </Link>*/}
+        {/*</li>*/}
       </ul>
     </div>
   )
