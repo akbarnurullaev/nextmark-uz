@@ -41,14 +41,14 @@ export default function Navbar() {
   )
 
   return (
-    <nav className="fixed w-full z-50 py-5 bg-blurry-dark border-gray-200">
+    <nav className="fixed w-full z-50 px-4 py-3 bg-blurry-dark border-gray-200">
       <div className="md:container md:mx-auto md:p-0 px-4 flex flex-wrap items-center justify-between">
         <Link href="/" className="flex mobile:w-auto w-32 items-center">
           <Image src={logo} alt="Logo" />
         </Link>
         <div className="flex md:order-2">
           <a className="hidden z-50 md:block" href="tel:+998 90 009 09 59">
-            <Button title="КОНТАКТЫ"/>
+            <Button title="+998 90 009 09 59"/>
           </a>
           <span
             onClick={() => setIsOpen(p => !p)}

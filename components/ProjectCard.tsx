@@ -17,7 +17,7 @@ export default function ProjectCard({ src, alt, title, description, containerCla
       <div className="info-block">
         <div className="px-8 pb-8">
           <h1 className="xl:text-2xl lg:text-xl font-bold uppercase text-white w-full">{title}</h1>
-          <p className="mt-2 xl:text-base lg:text-sm text-white w-full">{description}</p>
+          {/*<p className="mt-2 xl:text-base lg:text-sm text-white w-full">{description}</p>*/}
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ export function ProjectCardMobile({ src, alt, title, description, containerClass
       <Image className={`${imgClass} h-80 object-cover project-card-image`} src={src} alt={alt}/>
 
       <h1 className="mt-2 font-bold uppercase text-white w-full">{title}</h1>
-      <p className="mt-1 text-xs text-lightCream w-full">{description}</p>
+      {/*<p className="mt-1 text-xs text-lightCream w-full">{description}</p>*/}
     </div>
   )
 }
