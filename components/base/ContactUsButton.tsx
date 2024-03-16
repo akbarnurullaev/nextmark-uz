@@ -1,9 +1,21 @@
-import Button from './Button';
+import Button from "./Button";
 
-export default function ContactUsButton({ className, onSubmit, loading }: { className?: string, onSubmit?: () => void, loading?: boolean }) {
+export default function ContactUsButton({
+  className,
+  onSubmit,
+  loading,
+}: {
+  className?: string;
+  onSubmit?: () => void;
+  loading?: boolean;
+}) {
   return (
-    <a onClick={onSubmit} href={onSubmit ? undefined : 'https://t.me/nextmark'}>
-      <Button disabled={loading} title={loading ? 'Загрузка...' : 'СВЯЗАТЬСЯ С НАМИ'} className={className}/>
+    <a onClick={onSubmit} href={onSubmit ? undefined : "tel:+998 95 089 49 39"}>
+      <Button
+        disabled={loading}
+        title={loading ? "Загрузка..." : "Оставить заявку"}
+        className={className}
+      />
     </a>
   );
 }
