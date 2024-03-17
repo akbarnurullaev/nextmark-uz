@@ -10,7 +10,7 @@ module.exports = {
   },
   rules: {
     indent: ["error", 2],
-    quotes: ['error', 'single', { avoidEscape: true }],
+    // quotes: ['error', 'single', { avoidEscape: true }],
     'no-empty-function': 'off',
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
