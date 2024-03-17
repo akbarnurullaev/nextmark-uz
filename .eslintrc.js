@@ -9,7 +9,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   rules: {
-    indent: ["error", 2],
+    // indent: ["error", 2],
     // quotes: ['error', 'single', { avoidEscape: true }],
     'no-empty-function': 'off',
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
